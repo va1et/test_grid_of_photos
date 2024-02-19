@@ -1,5 +1,4 @@
 import 'package:flutter_text/domain/models/Image.dart';
-import 'package:flutter_text/presentation/app.dart';
 import 'package:flutter_text/presentation/pages/photo_info_page.dart';
 import 'package:flutter_text/presentation/pages/photos_page.dart';
 import 'package:go_router/go_router.dart';

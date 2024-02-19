@@ -1,8 +1,6 @@
 // ignore_for_file: use_super_parameters
 
 import 'dart:convert';
-
-import 'package:flutter_text/data/datasources/photos_remote.dart';
 import 'package:flutter_text/domain/models/Image.dart';
 import 'package:flutter_text/domain/models/item.dart';
 

@@ -1,7 +1,8 @@
+// ignore_for_file: use_super_parameters
+
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_text/data/models/photos_model.dart';
 import 'package:flutter_text/domain/models/Image.dart';
 import 'package:go_router/go_router.dart';
 import 'package:photo_view/photo_view.dart';
