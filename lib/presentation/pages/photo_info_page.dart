@@ -3,28 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_text/data/models/photos_model.dart';
 import 'package:flutter_text/domain/models/Image.dart';
+import 'package:go_router/go_router.dart';
 import 'package:photo_view/photo_view.dart';
-
-// class PhotoInfoPage extends StatelessWidget {
-//   final ImageItem image;
-
-//   const PhotoInfoPage({Key? key, required this.image}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(),
-//       body: Center(
-//         child: PhotoView(
-//           imageProvider: NetworkImage(image.url),
-//           minScale: PhotoViewComputedScale.contained,
-//           maxScale: PhotoViewComputedScale.covered * 2,
-//           enableRotation: true,
-//         ),
-//       ),
-//     );
-//   }
-// }
 
 class PhotoInfoPage extends StatefulWidget {
   const PhotoInfoPage({Key? key, required this.image}) : super(key: key);
@@ -98,7 +78,7 @@ class _PhotoInfoPageState extends State<PhotoInfoPage>
               shadowColor: const Color(0xFFFFFFFF),
               leading: CupertinoNavigationBarBackButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  context.go('/home');
                 },
                 color: const Color(0xFF808B9F),
               ),

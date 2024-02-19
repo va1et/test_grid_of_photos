@@ -4,6 +4,7 @@ import 'package:flutter_text/common/theme/theme.dart';
 import 'package:flutter_text/domain/models/Image.dart';
 import 'package:flutter_text/presentation/pages/photo_info_page.dart';
 import 'package:fpdart/fpdart.dart';
+import 'package:go_router/go_router.dart';
 import 'package:shimmer/shimmer.dart';
 
 class PhotosItemWidget extends StatelessWidget {
@@ -16,11 +17,12 @@ class PhotosItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => PhotoInfoPage(image: image2),
-            ));
+        context.go('/fullphoto:photoId', extra: image2);
+        // Navigator.push(
+        //     context,
+        //     MaterialPageRoute(
+        //       builder: (context) => PhotoInfoPage(image: image2),
+        //     ));
       },
       child: Card(
         clipBehavior: Clip.antiAlias,

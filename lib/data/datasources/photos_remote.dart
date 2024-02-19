@@ -46,7 +46,7 @@ class PhotosRemoteDataImpl extends PhotosRemoteData {
         return ResultPhotos.fromJson(data["result"]);
       }
       if (response.statusCode == 400) {
-        throw ServerException('Фото больше нет');
+        throw ServerException('Token error');
       } else {
         throw ServerException('Response status code is statusCode');
       }
