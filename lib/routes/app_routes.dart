@@ -12,7 +12,6 @@ GoRouter createRouter() => GoRouter(initialLocation: '/home', routes: [
       GoRoute(
         path: '/fullphoto:photoId',
         builder: (context, state) {
-          // Здесь нужно вернуть экран FullPhotoScreen
           return PhotoInfoPage(
             image: state.extra as ImageItem,
           );
