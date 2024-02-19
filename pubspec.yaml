@@ -1,0 +1,144 @@
+name: flutter_text
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+  # Simple direct Service Locator for Dependency Injection.
+  # See https://pub.dev/packages/get_it
+  get_it: ^7.6.7
+
+  # Http client. 
+  # See https://pub.dev/packages/dio
+  dio: ^5.4.1
+
+  # Widgets that make it easy to implement the BLoC. 
+  # See https://pub.dev/packages/flutter_bloc
+  flutter_bloc: ^8.1.4
+
+
+  # A declarative routing package for Flutter that uses the Router API
+  # See https://pub.dev/packages/go_router
+  go_router: ^13.2.0
+
+  # Flutter plugin for discovering the state of the network (WiFi & mobile/cellular) 
+  # connectivity on Android and iOS.
+  # See https://pub.dev/packages/connectivity_plus
+  internet_connection_checker: ^1.0.0+1
+
+  # Simple no-sql local database. 
+  # See https://pub.dev/packages/shared_preferences
+  shared_preferences: ^2.2.2
+  
+  
+
+  # Contains code to deal with internationalized/localized messages, date and number formatting 
+  # and parsing, bi-directional text, and other internationalization issues.
+  # See https://pub.dev/packages/intl
+  intl: ^0.18.0
+
+  # Helps to implement value based equality without explicitly 
+  # override == and hashCode. 
+  # See https://pub.dev/packages/equatable
+  equatable: ^2.0.5
+  
+  # Functional programming in Dart and Flutter
+  # See https://pub.dev/packages/fpdart
+  fpdart: ^1.1.0
+  
+  # A package provides an easy way to add shimmer effect in Flutter project
+  # See https://pub.dev/packages/shimmer
+  shimmer: ^3.0.0
+
+  # A powerful official extension library of images
+  # See https://pub.dev/packages/extended_image
+  extended_image: ^8.1.0
+
+  # Load and cache network images with with placeholder and error widgets.
+  # See https://pub.dev/packages/cached_network_image
+  cached_network_image: ^3.3.1
+  flutter_localizations:
+    sdk: flutter
+
+  # A  flutter library to show images from the internet and keep them in the cache directory.
+  # See https://pub.dev/packages/photo_view
+  photo_view: ^0.14.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.4.7
+  build_runner: ^2.4.8
+  freezed_annotation: ^2.4.1
+  flutter_lints: ^3.0.1
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+  assets:
+   
+    - assets/icons/
+    - assets/images/
+  
+
+
+  fonts:
+    - family: SF Pro-Text
+      fonts:
+        - asset: assets/fonts/SF-Pro-Text-Regular.otf
+          weight: 400
+        - asset: assets/fonts/SF-Pro-Text-Bold.otf
+          weight: 700
+        - asset: assets/fonts/SF-Pro-Text-Semibold.otf
+          weight: 600
+
+    - family: SF Pro Display
+      fonts:
+        - asset: assets/fonts/SFProDisplay-Light.ttf
+          weight: 300
+        - asset: assets/fonts/SF-Pro-Display-Medium.otf
+          weight: 500
+        - asset: assets/fonts/SFProDisplay-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SFProDisplay-Semibold.ttf
+          weight: 600
+        - asset: assets/fonts/SFProDisplay-Bold.ttf
+          weight: 700
+  
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
